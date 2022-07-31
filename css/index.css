@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: unset;
+    text-decoration: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.home {
+    position: relative;
+    height:100vh;
+
+    background: linear-gradient(128.22deg, #F4CB38 10.36%, #F4A938 84.38%);
+}
+
+.home .header {
+    position: relative;
+    top: 50px;
+    height: 46px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .header .logo-and-name {
+    position: relative;
+    height: 46px;
+    width: 200px;
+    flex-grow: 2;
+}
+
+.home .header .logo-and-name .logo {
+    position: absolute;
+}
+.home .header .logo-and-name .name {
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 30px;
+    width: max-content;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.home .header .menu {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-grow: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .header .authorization {
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .header .authorization .sign-up {
+    position: relative;
+}
+
+
+.home .header .authorization .log-in {
+    position: relative;
+    width: 100px;
+    height: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
