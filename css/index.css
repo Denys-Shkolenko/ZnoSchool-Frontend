@@ -3,9 +3,6 @@
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 a:link, a:visited,  a:hover, a:active {
@@ -46,6 +43,7 @@ html, body {
     height: 46px;
     width: 185px;
 
+    text-align: center;
     border-radius: 10px;
     background: linear-gradient(to left, transparent 50%, #FFE49A 50%);
     background-size: 200%;
@@ -70,15 +68,16 @@ html, body {
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 
     color: #000000;
 }
 
 
-.home .header .menu {
+.home .header .home .header .navigation-bar #menu {
     position: relative;
     height: 30px;
     top: 50%;
@@ -86,7 +85,6 @@ html, body {
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +93,7 @@ html, body {
     color: #000000;
 }
 
-.home .header .menu a:hover {
+.home .header .home .header .navigation-bar #menu a:hover {
     border-bottom: 1px solid #000000;
 }
 
@@ -104,7 +102,6 @@ html, body {
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -127,9 +124,6 @@ html, body {
     width: 100px;
     height: 30px;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -196,7 +190,6 @@ html, body {
 
     font-weight: 700;
     font-size: 32px;
-    line-height: 39px;
     display: flex;
     align-items: center;
 
@@ -210,7 +203,6 @@ html, body {
 
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
     display: flex;
     align-items: center;
 
@@ -227,7 +219,6 @@ html, body {
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -242,4 +233,79 @@ html, body {
 
 .welcome-content .rectangle .main-btn:hover {
     background: #F43838;
+}
+
+@media (max-width: 1399px) {
+    .welcome-content .rectangle .name {
+        left: 40px;
+    }
+
+    .welcome-content .rectangle .description {
+        left: 40px;
+    }
+
+    .welcome-content .rectangle .main-btn {
+        right: 40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .home .header {
+        height: 30px;
+    }
+
+    .home .header .logo-and-name {
+        height: 30px;
+        width: 145px;
+    }
+
+    .home .header .logo-and-name .logo img {
+        display: block;
+        height: 30px;
+    }
+    .home .header .logo-and-name .name {
+        left: 40px;
+        height: 16px;
+
+        font-size: 16px;
+    }
+
+    .home .header .authorization {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .home .header .authorization .log-in {
+        width: 90px;
+        height: 28px;
+    }
+
+    .welcome-content .rectangle {
+        height: 150px;
+        bottom: -50px;
+    }
+
+    .welcome-content .rectangle .name {
+        top: 46px;
+        left: 30px;
+        font-size: 26px;
+    }
+
+    .welcome-content .rectangle .description {
+        bottom: 46px;
+        left: 30px;
+        font-size: 16px;
+    }
+
+    .welcome-content .rectangle .main-btn {
+        width: 260px;
+        height: 50px;
+
+        right: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+
 }
