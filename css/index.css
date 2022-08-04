@@ -110,6 +110,10 @@ html, body {
     border-bottom: 1px solid #000000;
 }
 
+.home .header .menu-list .line {
+    display: none;
+}
+
 .home .header .authorization {
     position: relative;
 
@@ -149,7 +153,7 @@ html, body {
 
 .home .header .authorization .log-in:hover {
     color: #FFFFFF;
-    background-color: #000000;
+    background: #000000;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
 }
 
@@ -355,7 +359,7 @@ html, body {
         right: 0;
         width: 30px;
         height: 20px;
-        z-index: 6;
+        z-index: 7;
         cursor: pointer;
     }
 
@@ -404,30 +408,76 @@ html, body {
 
     .home .header .menu-list {
         position: absolute;
-        top: -290px;
+        top: -300px;
         right: -10px;
+        padding-top: 35px;
+        transform: none;
         width: 300px;
-        height: 200px;
+        height: 221px;
         background-color: #FFE49A;
         border-radius: 20px;
-        z-index: 5;
+        justify-content: flex-start;
+        gap: 0px;
+        z-index: 6;
         transition: all 0.3s ease 0s;
 
         flex-direction: column;
     }
 
+    .home .header .menu-list a:hover {
+        border-bottom: none;
+    }
+
+    .home .header .menu-list li,
+    .home .header .authorization .sign-up,
+    .home .header .authorization .log-in {
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .home .header .authorization .log-in {
+        border: none;
+    }
+
+    .home .header .menu-list li:hover {
+        background: #F4D57F;
+    }
+
     .home .header .menu-list.active {
-        top: 90px;
+        top: -10px;
+    }
+
+    .home .header .menu-list .line {
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 6;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .home .header .authorization {
         position: absolute;
-        top: -250px;
+        top: -400px;
         right: -10px;
+        transform: none;
         width: 300px;
-        height: 100px;
+        height: fit-content;
+        padding-top: 56px;
+        padding-bottom: 35px;
         display: flex;
-        justify-content: center;
+        gap: 0px;
+        justify-content: flex-start;
         background-color: #FFE49A;
         border-radius: 20px;
         z-index: 5;
@@ -436,7 +486,21 @@ html, body {
         flex-direction: column;
     }
 
+    .home .header .authorization .sign-up a:hover {
+        border-bottom: none;
+    }
+
+    .home .header .authorization .sign-up:hover {
+        background: #F4D57F;
+    }
+
+    .home .header .authorization .log-in:hover {
+        color: #000000;
+        background: #F4D57F;
+        box-shadow: none;
+    }
+
     .home .header .authorization.active {
-        top: 150px;
+        top: 165px;
     }
 }
