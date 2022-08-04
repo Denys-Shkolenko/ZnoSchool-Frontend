@@ -131,7 +131,6 @@ html, body {
     border-bottom: 1px solid #000000;
 }
 
-
 .home .header .authorization .log-in {
     position: relative;
     width: 100px;
@@ -152,6 +151,10 @@ html, body {
     color: #FFFFFF;
     background-color: #000000;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+.home .header .shadow-background {
+    display: none;
 }
 
 .welcome-content {
@@ -323,14 +326,37 @@ html, body {
 }
 
 @media (max-width: 991px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .home .header .shadow-background {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 4;
+
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .home .header .shadow-background.active {
+        display: block;
+    }
+
     .home .header .header-burger {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
         width: 30px;
         height: 20px;
-        z-index: 5;
+        z-index: 6;
+        cursor: pointer;
     }
 
     .home .header .header-burger span {
@@ -378,33 +404,33 @@ html, body {
 
     .home .header .menu-list {
         position: absolute;
-        top: -300px;
-        right: 0;
+        top: -290px;
+        right: -10px;
         width: 300px;
         height: 200px;
         background-color: #FFE49A;
         border-radius: 20px;
-        z-index: 4;
+        z-index: 5;
         transition: all 0.3s ease 0s;
 
         flex-direction: column;
     }
 
     .home .header .menu-list.active {
-        top: 100px;
+        top: 90px;
     }
 
     .home .header .authorization {
         position: absolute;
         top: -250px;
-        right: 0;
+        right: -10px;
         width: 300px;
         height: 100px;
         display: flex;
         justify-content: center;
         background-color: #FFE49A;
         border-radius: 20px;
-        z-index: 4;
+        z-index: 5;
         transition: all 0.3s ease 0s;
 
         flex-direction: column;
