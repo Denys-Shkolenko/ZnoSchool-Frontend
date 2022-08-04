@@ -16,6 +16,10 @@ a:link, a:visited,  a:hover, a:active {
     text-decoration: none;
 }
 
+body.stop-transitions * {
+    transition: none !important;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -152,10 +156,6 @@ html, body {
 
 .welcome-content {
     position: relative;
-}
-
-.welcome-content .team_photo {
-
 }
 
 .welcome-content .team_photo img {
