@@ -38,7 +38,7 @@ html, body {
 
 .home {
     position: relative;
-    height:100vh;
+    height: 100vh;
 
     background: linear-gradient(128.22deg, #F4CB38 10.36%, #F4A938 84.38%);
 }
@@ -334,9 +334,9 @@ html, body {
 }
 
 @media (max-width: 991px) {
-    body.lock {
-        overflow: hidden;
-    }
+    /*body.lock {*/
+    /*    overflow: hidden;*/
+    /*}*/
 
     .home .header .shadow-background {
         position: fixed;
