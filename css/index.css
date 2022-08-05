@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+h1 {
+    all: unset;
+}
+
 ::selection {
     color: unset;
     background: #F4C072;
