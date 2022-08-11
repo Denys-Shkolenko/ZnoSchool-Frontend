@@ -1,0 +1,84 @@
+.benefits {
+    position: relative;
+    height: fit-content;
+}
+
+.benefits .topic {
+    position: relative;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+.benefits .benefits-slider {
+    position: relative;
+    height: fit-content;
+}
+
+.benefits .benefits-slider .slick-track {
+    gap: 30px;
+}
+
+.benefits .benefits-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 7;
+    font-size: 0;
+}
+
+.benefits .benefits-slider .rectangle {
+    position: relative;
+    width: 645px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.benefits .benefits-slider .rectangle .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits .benefits-slider .rectangle .name {
+    position: relative;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #F4A938;
+}
+
+.benefits .benefits-slider .rectangle .description {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+}
