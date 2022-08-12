@@ -1,0 +1,63 @@
+.teachers {
+    background: #FFE49A;
+}
+
+.teachers .topic {
+    margin-top: 30px;
+}
+
+.teachers .teachers-slider .item {
+    position: relative;
+    margin: 0 15px;
+    height: 500px;
+}
+
+.teachers .teachers-slider .item .rectangle {
+    position: relative;
+    height: 470px;
+
+    background: #E79797;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.teachers .teachers-slider .item .rectangle .name {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 63px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    background: #000000;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.teachers .teachers-slider .item .subject {
+    position: absolute;
+    width: max-content;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+}

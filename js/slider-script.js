@@ -17,4 +17,21 @@ $(document).ready(function () {
                }
           ]
      });
+
+     $('.teachers-slider').slick({
+          arrows: true,
+          dots: true,
+          slidesToShow: 3,
+          speed: 1500,
+          draggable: false,
+          swipe: false,
+          responsive: [
+               {
+                    breakpoint: 992,
+                    settings: {
+                         slidesToShow: 1
+                    }
+               }
+          ]
+     });
 });
