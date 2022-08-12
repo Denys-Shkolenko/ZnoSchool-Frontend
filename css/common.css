@@ -57,18 +57,6 @@ body {
     height: fit-content;
 }
 
-.slick-slider.slick-initialized {
-
-}
-
-.slick-slider.slick-dotted {
-
-}
-
-.slick-list {
-
-}
-
 .slick-track {
     display: flex;
     flex-direction: row;
@@ -86,20 +74,11 @@ body {
     visibility: visible;
 }
 
-.slick-slide.slick-current {
-
-}
-
-.slick-slide.slick-center {
-
-}
-
-.slick-slide.slick-cloned {
-
-}
-
 .slick-arrow {
     position: absolute;
+    margin: -30px 0;
+    width: 60px;
+    height: 60px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 7;
@@ -109,17 +88,15 @@ body {
 }
 
 .slick-arrow.slick-prev {
+    left: -60px;
     background: url("../img/prev-arrow.svg") 0 0 / 100% no-repeat;
     border: none;
 }
 
 .slick-arrow.slick-next {
+    right: -60px;
     background: url("../img/next-arrow.svg") 0 0 / 100% no-repeat;
     border: none;
-}
-
-.slick-arrow.slick-disabled {
-
 }
 
 .slick-dots {
@@ -134,10 +111,6 @@ body {
     margin: 0 10px;
 }
 
-.slick-dots li.slick-active {
-
-}
-
 .slick-dots li.slick-active button {
     background-color: #F44F38;
 }
@@ -149,4 +122,29 @@ body {
     height: 10px;
     background-color: #F4A938;
     border-radius: 50% ;
+}
+
+@media (max-width: 1280px) {
+    .slick-arrow.slick-prev {
+        left: 5px;
+    }
+
+    .slick-arrow.slick-next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    .slick-arrow {
+        width: 40px;
+        height: 40px;
+    }
 }

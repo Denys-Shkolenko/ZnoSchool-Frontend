@@ -7,6 +7,7 @@ $(document).ready(function () {
           autoplay: true,
           autoplaySpeed: 2000,
           draggable: false,
+          swipe: false,
           responsive: [
                {
                     breakpoint: 992,
