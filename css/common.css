@@ -14,7 +14,6 @@ h1 {
     background: #F4C072;
 }
 
-/* For Mozilla Firefox */
 ::-moz-selection {
     color: unset;
     background: #F4C072;
@@ -40,6 +39,8 @@ body.stop-transitions * {
 }
 
 html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
@@ -48,12 +49,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    overflow-x: hidden;
-}
-
-body section {
-    position: relative;
-    height: fit-content;
 }
 
 .topic {
