@@ -18,25 +18,9 @@
     color: #000000;
 }
 
-.benefits .benefits-slider {
-    position: relative;
-    height: fit-content;
-}
-
-.benefits .benefits-slider .slick-track {
-    gap: 30px;
-}
-
-.benefits .benefits-slider .slick-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 7;
-    font-size: 0;
-}
-
 .benefits .benefits-slider .rectangle {
     position: relative;
-    width: 645px;
+    margin: 0 15px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -74,11 +58,87 @@
 
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 
     color: #000000;
+}
+
+.benefits .benefits-slider .slick-arrow {
+    margin: -30px 0;
+    width: 60px;
+    height: 60px;
+}
+
+.benefits .benefits-slider .slick-arrow.slick-prev {
+    left: -60px;
+}
+
+.benefits .benefits-slider .slick-arrow.slick-next {
+    right: -60px;
+}
+
+@media (max-width: 1280px) {
+    .benefits .benefits-slider .slick-arrow.slick-prev {
+        left: 5px;
+    }
+
+    .benefits .benefits-slider .slick-arrow.slick-next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .benefits .topic {
+        font-size: 24px;
+    }
+
+    .benefits .benefits-slider .rectangle .name {
+        font-size: 24px;
+    }
+
+    .benefits .benefits-slider .rectangle .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .benefits .benefits-slider .slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .benefits .benefits-slider .rectangle {
+        gap: 0px;
+        height: 250px;
+    }
+
+    .benefits .topic {
+        font-size: 16px;
+    }
+
+    .benefits .benefits-slider .rectangle .icon img {
+        height: 100px;
+        width: auto;
+    }
+
+    .benefits .benefits-slider .rectangle .name {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .benefits .benefits-slider .rectangle .description {
+        font-size: 12px;
+        width: 250px;
+    }
+
+    .benefits .benefits-slider .slick-arrow {
+        width: 40px;
+        height: 40px;
+    }
 }
