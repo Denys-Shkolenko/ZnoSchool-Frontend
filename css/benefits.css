@@ -46,6 +46,10 @@
     color: #000000;
 }
 
+.benefits .benefits-slider .slick-arrow:active {
+    background-color: #D4D4D4;
+}
+
 @media (max-width: 1199px) {
     .benefits .benefits-slider .rectangle .name {
         font-size: 24px;

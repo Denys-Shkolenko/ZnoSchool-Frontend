@@ -301,10 +301,6 @@
 }
 
 @media (max-width: 991px) {
-    /*body.lock {*/
-    /*    overflow: hidden;*/
-    /*}*/
-
     .home .header .logo-and-name:hover {
         background-position: right;
     }
