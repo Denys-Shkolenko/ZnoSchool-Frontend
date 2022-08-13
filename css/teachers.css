@@ -61,6 +61,9 @@
 
 .teachers .teachers-slider .item .rectangle .back {
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .teachers .teachers-slider .item .rectangle .front .photo {
@@ -75,14 +78,16 @@
     width: auto;
 }
 
-.teachers .teachers-slider .item .rectangle .front .read-more-icon {
+.teachers .teachers-slider .item .rectangle .front .read-more-icon,
+.teachers .teachers-slider .item .rectangle .back .person-icon {
     position: absolute;
     top: 20px;
     right: 20px;
     opacity: 50%;
 }
 
-.teachers .teachers-slider .item .rectangle .front .name {
+.teachers .teachers-slider .item .rectangle .front .name,
+.teachers .teachers-slider .item .rectangle .back .instagram-link {
     position: absolute;
     bottom: -30px;
     left: 50%;
@@ -104,6 +109,34 @@
     border-radius: 10px;
 }
 
+.teachers .teachers-slider .item .rectangle .back .name {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.teachers .teachers-slider .item .rectangle .back .about-teacher {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.teachers .teachers-slider .item .rectangle .back .about-teacher li {
+    margin-bottom: 15px;
+}
+
+.teachers .teachers-slider .item .rectangle .back .instagram-link:hover,
+.teachers .teachers-slider .item .rectangle .front .name:hover {
+    cursor: pointer;
+}
+
 .teachers .teachers-slider .item .subject {
     position: absolute;
     width: max-content;
@@ -121,6 +154,13 @@
     color: #000000;
 }
 
+@media (max-width: 991px) {
+    .teachers .teachers-slider .item .rectangle .back {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 @media (max-width: 475px) {
     .teachers .teachers-slider .item {
         height: 380px;
@@ -135,7 +175,26 @@
         width: auto;
     }
 
-    .teachers .teachers-slider .item .rectangle .front .name {
+    .teachers .teachers-slider .item .rectangle .back .name {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .teachers .teachers-slider .item .rectangle .back {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .teachers .teachers-slider .item .rectangle .back .about-teacher {
+        font-size: 12px;
+    }
+
+    .teachers .teachers-slider .item .rectangle .back .about-teacher li {
+        margin-bottom: 10px;
+    }
+
+    .teachers .teachers-slider .item .rectangle .front .name,
+    .teachers .teachers-slider .item .rectangle .back .instagram-link {
         font-size: 16px;
         width: 200px;
         height: 40px;

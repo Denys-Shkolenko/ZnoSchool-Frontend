@@ -145,11 +145,11 @@ body {
 
 @media (max-width: 1280px) {
     .slick-arrow.slick-prev {
-        left: 5px;
+        left: -20px;
     }
 
     .slick-arrow.slick-next {
-        right: 5px;
+        right: -20px;
     }
 }
 
@@ -166,6 +166,15 @@ body {
     }
 }
 
+@media (max-width: 575px) {
+    .slick-arrow.slick-prev {
+        left: 5px;
+    }
+
+    .slick-arrow.slick-next {
+        right: 5px;
+    }
+}
 
 @media (max-width: 475px) {
     .topic {

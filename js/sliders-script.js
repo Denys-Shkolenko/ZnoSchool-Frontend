@@ -27,7 +27,7 @@ $(document).ready(function () {
           swipe: false,
           responsive: [
                {
-                    breakpoint: 1199,
+                    breakpoint: 1200,
                     settings: {
                          slidesToShow: 2
                     }
