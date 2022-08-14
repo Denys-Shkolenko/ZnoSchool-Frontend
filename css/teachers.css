@@ -159,6 +159,10 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .teachers .teachers-slider .item:active .rectangle {
+        transform: rotateY(180deg);
+    }
 }
 
 @media (max-width: 475px) {
