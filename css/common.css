@@ -104,6 +104,7 @@ body {
 
 .slick-arrow:hover {
     opacity: 100%;
+    cursor: pointer;
 }
 
 .slick-arrow.slick-prev {
@@ -140,7 +141,8 @@ body {
     width: 10px;
     height: 10px;
     background-color: #F4A938;
-    border-radius: 50% ;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 @media (max-width: 1280px) {

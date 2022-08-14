@@ -176,17 +176,18 @@
     }
 
     .teachers .teachers-slider .item .rectangle .back .name {
-        margin-bottom: 10px;
+        margin-bottom: 2px;
+        margin-top: 3px;
         font-size: 16px;
     }
 
     .teachers .teachers-slider .item .rectangle .back {
-        margin-left: 20px;
-        margin-right: 20px;
+        padding: 20px;
     }
 
     .teachers .teachers-slider .item .rectangle .back .about-teacher {
         font-size: 12px;
+        margin-left: 16px;
     }
 
     .teachers .teachers-slider .item .rectangle .back .about-teacher li {
