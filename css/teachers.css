@@ -160,8 +160,18 @@
         padding-right: 40px;
     }
 
-    .teachers .teachers-slider .item:active .rectangle {
+    .teachers .teachers-slider .item:hover .rectangle {
+        transform: none;
+    }
+
+    .teachers .teachers-slider .item .rectangle.active {
         transform: rotateY(180deg);
+    }
+
+    .teachers .teachers-slider .item .rectangle .front .read-more-icon:hover,
+    .teachers .teachers-slider .item .rectangle .back .person-icon:hover {
+        opacity: 100%;
+        cursor: pointer;
     }
 }
 
