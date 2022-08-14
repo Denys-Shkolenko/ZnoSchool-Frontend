@@ -48,12 +48,12 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
 }
 
 .topic {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     font-weight: 700;
     font-size: 30px;

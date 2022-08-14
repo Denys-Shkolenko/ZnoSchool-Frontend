@@ -40,4 +40,13 @@ $(document).ready(function () {
                }
           ]
      });
+
+     $('.comments-slider').slick({
+          arrows: true,
+          dots: true,
+          slidesToShow: 1,
+          speed: 1500,
+          draggable: false,
+          swipe: false
+     });
 });

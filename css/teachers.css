@@ -1,9 +1,6 @@
 .teachers {
     background: #FFE49A;
-}
-
-.teachers .topic {
-    margin-top: 30px;
+    padding: 40px 0;
 }
 
 .teachers .teachers-slider .slick-arrow {
@@ -86,6 +83,10 @@
     opacity: 50%;
 }
 
+.teachers .teachers-slider .item .rectangle .back .person-icon {
+    display: none;
+}
+
 .teachers .teachers-slider .item .rectangle .front .name,
 .teachers .teachers-slider .item .rectangle .back .instagram-link {
     position: absolute;
@@ -166,6 +167,10 @@
 
     .teachers .teachers-slider .item .rectangle.active {
         transform: rotateY(180deg);
+    }
+
+    .teachers .teachers-slider .item .rectangle .back .person-icon {
+        display: block;
     }
 
     .teachers .teachers-slider .item .rectangle .front .read-more-icon:hover,
