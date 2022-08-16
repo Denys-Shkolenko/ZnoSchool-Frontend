@@ -222,8 +222,8 @@
     }
 
     .teachers .teachers-slider .item .subject {
-        font-size: 12px;
-        bottom: 0;
+        font-size: 14px;
+        bottom: -5px;
     }
 
     .teachers .teachers-slider .slick-arrow {

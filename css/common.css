@@ -179,8 +179,13 @@ body {
 }
 
 @media (max-width: 475px) {
+    body {
+        gap: 70px;
+    }
+
     .topic {
         font-size: 16px;
+        margin-bottom: 25px;
     }
 
     .slick-arrow {

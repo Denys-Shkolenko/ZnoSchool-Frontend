@@ -1,11 +1,11 @@
 .comments .comments-slider .rectangle {
     position: relative;
     margin: 0 15px;
-    padding: 30px;
-    height: 440px;
+    padding: 30px 30px 30px 260px;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 
     background: #FFFFFF;
@@ -15,7 +15,7 @@
 
 .comments .comments-slider .rectangle .photo {
     position: absolute;
-    top: 40px;
+    left: 30px;
 }
 
 .comments .comments-slider .rectangle .photo img {
@@ -23,9 +23,7 @@
 }
 
 .comments .comments-slider .rectangle .name {
-    position: absolute;
-    top: 40px;
-    left: 260px;
+    position: relative;
 
     font-weight: 500;
     font-size: 24px;
@@ -36,12 +34,8 @@
 }
 
 .comments .comments-slider .rectangle .comment-text {
-    position: absolute;
-    margin-right: 30px;
-    top: 80px;
-    left: 260px;
-
-    font-weight: 400;
+    position: relative;
+    height: fit-content;
     font-size: 20px;
 
     color: #000000;
@@ -54,37 +48,35 @@
 }
 
 @media (max-width: 991px) {
+    .comments .comments-slider .rectangle {
+        padding-left: 160px;
+    }
+
     .comments .comments-slider .rectangle .photo img {
         height: 100px;
         width: auto;
-    }
-
-    .comments .comments-slider .rectangle .name,
-    .comments .comments-slider .rectangle .comment-text {
-        left: 160px;
     }
 }
 
 @media (max-width: 475px) {
     .comments .comments-slider .rectangle {
-        height: 280px;
-        padding: 20px;
+        padding: 140px 20px 20px 20px;
+        gap: 5px;
     }
 
     .comments .comments-slider .rectangle .photo {
-        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
     }
 
     .comments .comments-slider .rectangle .name {
         font-size: 16px;
-        top: 20px;
-        left: 20px;
+        justify-content: center;
     }
 
     .comments .comments-slider .rectangle .comment-text {
         font-size: 12px;
-        margin-right: 20px;
-        top: 50px;
-        left: 20px;
     }
 }
