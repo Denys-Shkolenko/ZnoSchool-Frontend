@@ -41,6 +41,7 @@ body.stop-transitions * {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
@@ -48,7 +49,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
+}
+
+section {
+    padding: 40px 0;
 }
 
 .topic {
@@ -180,7 +185,7 @@ body {
 
 @media (max-width: 475px) {
     body {
-        gap: 70px;
+        gap: 0;
     }
 
     .topic {

@@ -1,4 +1,4 @@
-.comments .comments-slider .rectangle {
+#comments .comments-slider .rectangle {
     position: relative;
     margin: 0 15px;
     padding: 30px 30px 30px 260px;
@@ -13,16 +13,16 @@
     border-radius: 20px;
 }
 
-.comments .comments-slider .rectangle .photo {
+#comments .comments-slider .rectangle .photo {
     position: absolute;
     left: 30px;
 }
 
-.comments .comments-slider .rectangle .photo img {
+#comments .comments-slider .rectangle .photo img {
     border-radius: 50%;
 }
 
-.comments .comments-slider .rectangle .name {
+#comments .comments-slider .rectangle .name {
     position: relative;
 
     font-weight: 500;
@@ -33,7 +33,7 @@
     color: #000000;
 }
 
-.comments .comments-slider .rectangle .comment-text {
+#comments .comments-slider .rectangle .comment-text {
     position: relative;
     height: fit-content;
     font-size: 20px;
@@ -41,50 +41,50 @@
     color: #000000;
 }
 
-.comments .comments-slider .slick-arrow {
+#comments .comments-slider .slick-arrow {
     background-color: #FFFFFF;
 }
 
-.comments .comments-slider .slick-arrow:active {
+#comments .comments-slider .slick-arrow:active {
     background-color: #D4D4D4;
 }
 
 @media (max-width: 1199px) {
-    .comments .comments-slider .rectangle .comment-text {
+    #comments .comments-slider .rectangle .comment-text {
         font-size: 16px;
     }
 }
 
 @media (max-width: 991px) {
-    .comments .comments-slider .rectangle {
+    #comments .comments-slider .rectangle {
         padding-left: 160px;
     }
 
-    .comments .comments-slider .rectangle .photo img {
+    #comments .comments-slider .rectangle .photo img {
         height: 100px;
         width: auto;
     }
 }
 
 @media (max-width: 475px) {
-    .comments .comments-slider .rectangle {
+    #comments .comments-slider .rectangle {
         padding: 140px 20px 20px 20px;
         gap: 5px;
     }
 
-    .comments .comments-slider .rectangle .photo {
+    #comments .comments-slider .rectangle .photo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 20px;
     }
 
-    .comments .comments-slider .rectangle .name {
+    #comments .comments-slider .rectangle .name {
         font-size: 16px;
         justify-content: center;
     }
 
-    .comments .comments-slider .rectangle .comment-text {
+    #comments .comments-slider .rectangle .comment-text {
         font-size: 12px;
     }
 }
