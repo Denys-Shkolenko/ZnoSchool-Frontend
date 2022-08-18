@@ -1,2 +1,2 @@
 # ZnoSchool-Frontend
-Web-platform for online ZNO-school (Landing)  
+Landing page for online ZNO-school  
