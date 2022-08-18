@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+#contacts .rectangle .item .icon img {
+    transition: transform 0.6s;
+}
+
 #contacts .rectangle .item .icon img:hover {
     transform: scale(110%);
 }
