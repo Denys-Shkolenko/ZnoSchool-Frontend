@@ -15,7 +15,7 @@
     margin-bottom: 30px;
 
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
 
     display: flex;
     align-items: center;
@@ -54,4 +54,23 @@
 
 #registration .telegram-bot-link .rectangle:hover {
     background: #F43838;
+}
+
+@media (max-width: 1199px) {
+    #registration .invitation-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 475px) {
+    #registration .invitation-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #registration .telegram-bot-link .rectangle {
+        font-size: 14px;
+        height: 40px;
+        width: 200px;
+    }
 }
