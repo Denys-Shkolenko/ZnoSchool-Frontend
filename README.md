@@ -7,3 +7,6 @@ GitHub Pages: https://denys-shkolenko.github.io/ZnoSchool-Frontend/
 - Bootstrap grid
 - jQuery
 - Slick slider
+  
+## Screenshots
+![image](https://user-images.githubusercontent.com/110092103/191038365-bd053a1f-2a5c-409d-a696-d0762fac0c3f.png)
